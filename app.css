@@ -222,16 +222,11 @@ body {
     padding: 15px 30px;
     text-decoration: none;
     margin: 25px 0;
-    /* transition: background-color 0.5ms ease-in-out; */
-    transition: color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    transition: background-color 0.5ms ease-in-out;
 }
 
-.pricing-button:hover,
 .pricing-button:focus {
     background-color: #d0fff0;
-    box-shadow: 0.1em 0.7em 0.6em -0.5em #09c7b4;
-    transform: translateY(-0.3em);
-    cursor: pointer;
 }
 
 .pricing-button.is-featured {
@@ -239,19 +234,53 @@ body {
     color: white;
 }
 
-.pricing-button.is-featured:hover,
 .pricing-button.is-featured:focus {
     background-color: #38eddb;
     color: white;
-    box-shadow: 0.1em 0.7em 0.6em -0.5em #09c7b4;
-    transform: translateY(-0.3em);
-    cursor: pointer;
 
 }
 
 @media(min-width:950px) {
     .panel {
         flex-direction: row;
+    }
+
+    .pricing-button {
+        border: 1px solid #2ec4b6;
+        border-radius: 12px;
+        color: #09c7b4;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 25px 0;
+        /* transition: background-color 0.5ms ease-in-out; */
+        transition: color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .pricing-button:hover,
+    .pricing-button:focus {
+        background-color: #d0fff0;
+        box-shadow: 0.1em 0.7em 0.6em -0.5em #09c7b4;
+        transform: translateY(-0.3em);
+        cursor: pointer;
+    }
+
+    .pricing-button.is-featured {
+        background-color: #34d7c7;
+        color: white;
+    }
+
+    .pricing-button.is-featured:hover,
+    .pricing-button.is-featured:focus {
+        background-color: #38eddb;
+        color: white;
+        box-shadow: 0.1em 0.7em 0.6em -0.5em #09c7b4;
+        transform: translateY(-0.3em);
+        cursor: pointer;
+
     }
 
     .pricing-plan {
@@ -321,6 +350,7 @@ body {
     }
 
     .panel {
+        flex-direction: column;
         border-radius: 0%;
         width: 90%;
     }
